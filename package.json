@@ -38,6 +38,7 @@
   "author": "j.milagroso@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "^3.0.4",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "^13.1.0",
