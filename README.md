@@ -1,25 +1,25 @@
-# json-api-response
+# json-api-response-js
 
  JSON API compliant http response library.
  
  [![Build Status](https://travis-ci.org/jmilagroso/typcheckjs.svg?branch=master)](https://travis-ci.org/jmilagroso/typcheckjs)
-[![Coverage Status](https://coveralls.io/repos/github/jmilagroso/json-api-response/badge.svg?branch=master)](https://coveralls.io/github/jmilagroso/json-api-response?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/jmilagroso/json-api-response-js/badge.svg?branch=master)](https://coveralls.io/github/jmilagroso/json-api-response-js?branch=master)
 
 ## Tech
 
-**json-api-response** uses a number of open source projects to work properly:
+**json-api-response-js** uses a number of open source projects to work properly:
 
 * [jsonapi-serializer](https://github.com/SeyZ/jsonapi-serializer) - A Node.js framework agnostic library for (de)serializing your data to JSON API (1.0 compliant). 
 * [typcheckjs](https://github.com/jmilagroso/typcheckjs) - JS data type checking.
 
 ### Setup
 ```sh
-npm install --save json-api-response
+npm install --save json-api-response-js
 ```
 
 ### Usage
 ```sh
-const JSONApiResponse = require('json-api-response');
+const JSONApiResponse = require('json-api-response-js');
 ...
   axios.get(process.env.SOME_URL, {
     method: 'POST',
@@ -107,7 +107,7 @@ const response = index.accepted(arrayNestedPayload);
 
 ### References
 ```sh
-const JSONApiResponse = require('json-api-response');
+const JSONApiResponse = require('json-api-response-js');
 
 // Status Code 200, OK
 JSONApiResponse.ok({...});
@@ -153,9 +153,9 @@ JSONApiResponse.custom({...}, 302, 'application/json', {
 
 ### Tests
 ```sh
- ✘ jay@ThinkPad  /usr/share/nginx/html/json-api-response  npm test
+ ✘ jay@ThinkPad  /usr/share/nginx/html/json-api-response-js  npm test
 
-> json-api-response@1.0.0 test /usr/share/nginx/html/json-api-response
+> json-api-response-js@1.0.0 test /usr/share/nginx/html/json-api-response-js
 > jest --coverage
 
  PASS  __tests__/index.test.js
