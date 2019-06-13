@@ -1,5 +1,5 @@
 {
-  "name": "json-api-response",
+  "name": "json-api-response-js",
   "version": "1.0.0",
   "description": "JSON API Standard compliant http response library.",
   "main": "index.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jmilagroso/json-api-response.git"
+    "url": "git+https://github.com/jmilagroso/json-api-response-js.git"
   },
   "jest": {
     "verbose": true,
@@ -44,9 +44,9 @@
   "author": "j.milagroso@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jmilagroso/json-api-response/issues"
+    "url": "https://github.com/jmilagroso/json-api-response-js/issues"
   },
-  "homepage": "https://github.com/jmilagroso/json-api-response#readme",
+  "homepage": "https://github.com/jmilagroso/json-api-response-js#readme",
   "devDependencies": {
     "coveralls": "^3.0.4",
     "eslint": "^5.16.0",
