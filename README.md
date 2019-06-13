@@ -2,7 +2,8 @@
 
  JSON API compliant http response library.
  
- [![Build Status](https://travis-ci.org/jmilagroso/typcheckjs.svg?branch=master)](https://travis-ci.org/jmilagroso/typcheckjs)
+[![npm version](https://badge.fury.io/js/json-api-response-js.svg)](https://badge.fury.io/js/json-api-response-js)
+[![Build Status](https://travis-ci.org/jmilagroso/typcheckjs.svg?branch=master)](https://travis-ci.org/jmilagroso/typcheckjs)
 [![Coverage Status](https://coveralls.io/repos/github/jmilagroso/json-api-response-js/badge.svg?branch=master)](https://coveralls.io/github/jmilagroso/json-api-response-js?branch=master)
 
 ## Tech
