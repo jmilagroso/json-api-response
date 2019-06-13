@@ -4,7 +4,16 @@
   "description": "JSON API Standard compliant http response library.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "lint": "eslint .",
+    "test": "jest test",
+    "test-with-coverage": "jest --coverage",
+    "coveralls": "cat coverage/lcov.info | coveralls"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test",
+      "pre-push": "npm run lint && npm test"
+    }
   },
   "repository": {
     "type": "git",
