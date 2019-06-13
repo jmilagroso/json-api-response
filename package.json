@@ -1,5 +1,5 @@
 {
-  "name": "responsinator",
+  "name": "json-api-response",
   "version": "1.0.0",
   "description": "JSON API Standard compliant http response library.",
   "main": "index.js",
