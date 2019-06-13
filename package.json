@@ -1,0 +1,45 @@
+{
+  "name": "responsinator",
+  "version": "1.0.0",
+  "description": "JSON API Standard compliant http response library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node",
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js"
+    ]
+  },
+  "engines": {
+    "node": "8.16.0"
+  },
+  "author": "j.milagroso@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.4.0",
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "jsonapi-serializer": "^3.6.4",
+    "typcheckjs": "^1.2.1"
+  }
+}
