@@ -35,8 +35,18 @@
   "engines": {
     "node": "8.16.0"
   },
+  "keywords": [
+    "js",
+    "json",
+    "api",
+    "response"
+  ],
   "author": "j.milagroso@gmail.com",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmilagroso/json-api-response/issues"
+  },
+  "homepage": "https://github.com/jmilagroso/json-api-response#readme",
   "devDependencies": {
     "coveralls": "^3.0.4",
     "eslint": "^5.16.0",
