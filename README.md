@@ -1,5 +1,9 @@
 # json-api-response
-  - JSON API compliant http response library.
+
+ JSON API compliant http response library.
+ 
+ [![Build Status](https://travis-ci.org/jmilagroso/typcheckjs.svg?branch=master)](https://travis-ci.org/jmilagroso/typcheckjs)
+[![Coverage Status](https://coveralls.io/repos/github/jmilagroso/json-api-response/badge.svg?branch=master)](https://coveralls.io/github/jmilagroso/json-api-response?branch=master)
 
 ## Tech
 
