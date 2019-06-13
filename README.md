@@ -153,9 +153,9 @@ JSONApiResponse.custom({...}, 302, 'application/json', {
 
 ### Tests
 ```sh
- ✘ jay@ThinkPad  /usr/share/nginx/html/responsinator  npm test
+ ✘ jay@ThinkPad  /usr/share/nginx/html/json-api-response  npm test
 
-> responsinator@1.0.0 test /usr/share/nginx/html/responsinator
+> json-api-response@1.0.0 test /usr/share/nginx/html/json-api-response
 > jest --coverage
 
  PASS  __tests__/index.test.js
