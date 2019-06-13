@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/jmilagroso/json-api-response.git"
   },
   "jest": {
     "verbose": true,
