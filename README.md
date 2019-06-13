@@ -56,7 +56,7 @@ const payload = {
     },
 };
 
-const response = index.created(payload);
+const response = JSONApiResponse.created(payload);
 // Output
 { status: 201,
       headers:
@@ -95,7 +95,7 @@ const arrayNestedPayload = [{
   }
 ];
 
-const response = index.accepted(arrayNestedPayload);
+const response = JSONApiResponse.accepted(arrayNestedPayload);
 // Output
 { status: 201,
       headers: 
