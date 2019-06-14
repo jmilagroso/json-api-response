@@ -1,6 +1,6 @@
 {
   "name": "json-api-response-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "JSON API Standard compliant http response library.",
   "main": "index.js",
   "scripts": {
