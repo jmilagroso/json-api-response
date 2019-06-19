@@ -22,6 +22,8 @@ npm install --save json-api-response-js
 ### Usage
 ```sh
 const JSONApiResponse = require('json-api-response-js');
+
+// Using axios
 ...
   axios.get(process.env.SOME_URL, {
     method: 'POST',
@@ -51,10 +53,11 @@ const JSONApiResponse = require('json-api-response-js');
 const payload = {
     id: 1,
     order_id: 10,
-    name: 'Eugene Santos',
+    name: 'Gwen Hester',
     info: {
-      mobile: '+63 917 123 4567',
-      age: 35,
+      mobile: '+63 919 123 4567',
+      age: 25,
+      status: 'married'
     },
 };
 
@@ -66,16 +69,17 @@ const response = JSONApiResponse.created(payload);
          responseHeaders:
           { 'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': true } },
-      body: '{"data":{"type":"serializes","id":"1","attributes":{"id":1,"order-id":10,"name":"Eugene Santos","info":{"mobile":"+63 917 123 1234","age":35}}}}' }
+      body: '{"data":{"type":"serializes","id":"1","attributes":{"id":1,"order-id":10,"name":"Gwen Hester","info":{"mobile":"+63 919 123 1234","age":25,"status":"married"}}}}' }
 
 // Handling Array Nested Payload
 const arrayNestedPayload = [{
     id: 1,
     order_id: 10,
-    name: 'Eugene Santos',
+    name: 'JL Raymundo',
     info: {
-      mobile: '+63 917 123 4567',
-      age: 35,
+      mobile: '+63 918 123 4567',
+      age: 25,
+      status: 'single'
     },
     country: {
       code: 'PH',
@@ -89,6 +93,7 @@ const arrayNestedPayload = [{
     info: {
       mobile: '+63 917 123 4567',
       age: 35,
+      status: 'married'
     },
     country: {
       code: 'PH',
@@ -105,7 +110,7 @@ const response = JSONApiResponse.accepted(arrayNestedPayload);
          responseHeaders:
           { 'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': true } },
-      body: '{"data":[{"type":"serializes","id":"1","attributes":{"id":1,"order-id":10,"name":"Eugene Santos","info":{"mobile":"+63 917 123 4567","age":35},"country":{"code":"PH","name":"Philippines"}}},{"type":"serializes","id":"2","attributes":{"id":2,"order-id":11,"name":"Eugene Santos","info":{"mobile":"+63 917 123 4567","age":35},"country":{"code":"PH","name":"Philippines"}}}]}' }
+      body: '{"data":[{"type":"serializes","id":"1","attributes":{"id":1,"order-id":10,"name":"JL Raymundo","info":{"mobile":"+63 918 123 4567","age":25,"status":"single"},"country":{"code":"PH","name":"Philippines"}}},{"type":"serializes","id":"2","attributes":{"id":2,"order-id":11,"name":"Eugene Santos","info":{"mobile":"+63 917 123 4567","age":35,"status":"married"},"country":{"code":"PH","name":"Philippines"}}}]}' }
 ```
 
 ### References
@@ -236,6 +241,7 @@ JSONApiResponse.internalServerError({...});
 // Custom. Statue 302, Found
 // @param Object data - The object payload. (Default value: {})
 // @param string type - The JSON API data type. (Default value: 'response')
+// @param integer status - The HTTP response status. (Default value: 200)
 // @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
 // @param Object responseHeaders - The HTTP response headers. (Default value: {
 //    'Access-Control-Allow-Origin':
