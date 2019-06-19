@@ -100,7 +100,7 @@ const response = JSONApiResponse.accepted(arrayNestedPayload);
 { status: 201,
       headers: 
        { 'Content-Type': 'application/vnd.api+json',
-         responseHeaders: 
+         responseHeaders:
           { 'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': true } },
       body: '{"data":[{"type":"serializes","id":"1","attributes":{"id":1,"order-id":10,"name":"John Doe1","info":{"mobile":"+00 9822 333","age":35},"country":{"code":"PH","name":"Philippines"}}},{"type":"serializes","id":"2","attributes":{"id":2,"order-id":11,"name":"John Doe1","info":{"mobile":"+00 9822 333","age":35},"country":{"code":"PH","name":"Philippines"}}}]}' }
@@ -111,42 +111,133 @@ const response = JSONApiResponse.accepted(arrayNestedPayload);
 const JSONApiResponse = require('json-api-response-js');
 
 // Status Code 200, OK
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.ok({...});
 
 // Status Code 201, Created
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.created({...});
 
 // Status Code 202, Accepted
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.accepted({...});
 
 // Status Code 206, Partial Content
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.partialContent({...});
 
 // Status Code 301, Moved Permanently
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.movedPermanently({...});
 
 // Status Code 304, Not Modified
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.notModified({...});
 
 // Status Code 400, Bad Request
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.badRequest({...});
 
 // Status Code 401, Unauthorized
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.unauthorized({...});
 
 // Status Code 403, Forbidden
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.forbidden({...});
 
 // Status Code 404, Not Found
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.notFound({...});
 
 // Status Code 405, Method Not Allowed
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.methodNotAllowed({...});
 
 // Status Code 500, Internal Server Error
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.internalServerError({...});
 
-// Custom. Statue 302, Found,
+// Custom. Statue 302, Found
+// @param Object data - The object payload. (Default value: {})
+// @param string type - The JSON API data type. (Default value: 'response')
+// @param string contentType - The HTTP response content type. (Default value: 'application/vnd.api+json')
+// @param Object responseHeaders - The HTTP response headers. (Default value: {
+//    'Access-Control-Allow-Origin':
+//    '*','Access-Control-Allow-Credentials': true}
+//    )
 JSONApiResponse.custom({...}, 302, 'application/json', {
     'CUSTOM-HEADER': 'VALUE'
 }});
