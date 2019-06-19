@@ -14,6 +14,7 @@
 * [typcheckjs](https://github.com/jmilagroso/typcheckjs) - JS data type checking.
 
 ### Setup
+
 ```sh
 npm install --save json-api-response-js
 ```
@@ -44,14 +45,15 @@ const JSONApiResponse = require('json-api-response-js');
 ```
 
 ### Sample Output
+
 ```sh
 // Handling Object Nested Payload
 const payload = {
     id: 1,
     order_id: 10,
-    name: 'John Doe1',
+    name: 'Eugene Santos',
     info: {
-      mobile: '+00 9822 333',
+      mobile: '+63 917 123 4567',
       age: 35,
     },
 };
@@ -64,15 +66,15 @@ const response = JSONApiResponse.created(payload);
          responseHeaders:
           { 'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': true } },
-      body: '{"data":{"type":"serializes","id":"1","attributes":{"id":1,"order-id":10,"name":"John Doe1","info":{"mobile":"+63 917 123 1234","age":35}}}}' }
+      body: '{"data":{"type":"serializes","id":"1","attributes":{"id":1,"order-id":10,"name":"Eugene Santos","info":{"mobile":"+63 917 123 1234","age":35}}}}' }
 
 // Handling Array Nested Payload
 const arrayNestedPayload = [{
     id: 1,
     order_id: 10,
-    name: 'John Doe1',
+    name: 'Eugene Santos',
     info: {
-      mobile: '+00 9822 333',
+      mobile: '+63 917 123 4567',
       age: 35,
     },
     country: {
@@ -83,9 +85,9 @@ const arrayNestedPayload = [{
   {
     id: 2,
     order_id: 11,
-    name: 'John Doe1',
+    name: 'Eugene Santos',
     info: {
-      mobile: '+00 9822 333',
+      mobile: '+63 917 123 4567',
       age: 35,
     },
     country: {
@@ -98,15 +100,16 @@ const arrayNestedPayload = [{
 const response = JSONApiResponse.accepted(arrayNestedPayload);
 // Output
 { status: 201,
-      headers: 
+      headers:
        { 'Content-Type': 'application/vnd.api+json',
          responseHeaders:
           { 'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Credentials': true } },
-      body: '{"data":[{"type":"serializes","id":"1","attributes":{"id":1,"order-id":10,"name":"John Doe1","info":{"mobile":"+00 9822 333","age":35},"country":{"code":"PH","name":"Philippines"}}},{"type":"serializes","id":"2","attributes":{"id":2,"order-id":11,"name":"John Doe1","info":{"mobile":"+00 9822 333","age":35},"country":{"code":"PH","name":"Philippines"}}}]}' }
+      body: '{"data":[{"type":"serializes","id":"1","attributes":{"id":1,"order-id":10,"name":"Eugene Santos","info":{"mobile":"+63 917 123 4567","age":35},"country":{"code":"PH","name":"Philippines"}}},{"type":"serializes","id":"2","attributes":{"id":2,"order-id":11,"name":"Eugene Santos","info":{"mobile":"+63 917 123 4567","age":35},"country":{"code":"PH","name":"Philippines"}}}]}' }
 ```
 
 ### References
+
 ```sh
 const JSONApiResponse = require('json-api-response-js');
 
@@ -244,6 +247,7 @@ JSONApiResponse.custom({...}, 302, 'application/json', {
 ```
 
 ### Tests
+
 ```sh
  ✘ jay@ThinkPad  /usr/share/nginx/html/json-api-response-js  npm test
 
