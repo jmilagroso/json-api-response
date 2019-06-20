@@ -247,7 +247,7 @@ JSONApiResponse.internalServerError({...});
 //    'Access-Control-Allow-Origin':
 //    '*','Access-Control-Allow-Credentials': true}
 //    )
-JSONApiResponse.custom({...}, 302, 'application/json', {
+JSONApiResponse.custom({...}, 'custom-response-type', 302, 'application/json', {
     'CUSTOM-HEADER': 'VALUE'
 }});
 ```
